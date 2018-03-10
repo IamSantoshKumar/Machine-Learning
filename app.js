@@ -32,6 +32,18 @@ function refreshUI(list) {
     document.getElementById('tab').innerHTML = lis;
 };
  
+function refreshUII(list) {
+
+    var sum = 0;
+    var count=0;
+    for (var i = 0; i < list.length; i++) {
+        sum +=  Number(list[i].amt);
+count=list.length;
+    };
+    document.getElementById('sum').innerHTML = sum;
+document.getElementById('count').innerHTML = count;
+};
+
 // this will get fired on inital load as well as when ever there is a change in the data
 favMovies.on("value", function(snapshot) {
     var data = snapshot.val();
@@ -51,5 +63,5 @@ amt = data[key].amt ;
     }
     // refresh the UI
     refreshUI(list);
-
+ refreshUII(list);
 });
