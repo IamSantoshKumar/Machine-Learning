@@ -1,4 +1,4 @@
-Fraduelent Credit Card Transaction Detection:
+Fraudulent Credit Card Transaction Detection:
 
 
 
